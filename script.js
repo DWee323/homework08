@@ -81,7 +81,7 @@ let box_4 = document.getElementById("box-4");
 let box_5 = document.getElementById("box-5");
 let box_6 = document.getElementById("box-6");
 
-//Q: whould they originally be transparent(no color)?
+//they are originally transparent(no color)
 const box_456_on_mouse_over = (event) => {
     let element = event.target;
     element.style.backgroundColor = "cyan";
@@ -99,3 +99,24 @@ const box_456_on_mouse_leave = (event) => {
 box_4.addEventListener("mouseleave", box_456_on_mouse_leave);
 box_5.addEventListener("mouseleave", box_456_on_mouse_leave);
 box_6.addEventListener("mouseleave", box_456_on_mouse_leave);
+
+//select the HTML element with the ID of box-7, box-8, box-9. Add one or more event listeners when the user's mouse is moving within said HTML elements (hint: move). Whenever the event listener is triggered, switch between the background colors of "fuchsia" and "gold". Note: This one will look crazy.
+//mousemove: A pointing device is moved over an element. (Fired continously as the mouse moves.)
+let box_7 = document.getElementById("box-7");
+let box_8 = document.getElementById("box-8");
+let box_9 = document.getElementById("box-9");
+
+//they are originally transparent(no color)
+const box_789_on_mouse_move = (event) => {
+    let element = event.target;   
+    if (element.style.backgroundColor === "" || element.style.backgroundColor === "gold") {
+        element.style.backgroundColor = "fuchsia";
+    } else {
+        element.style.backgroundColor = "gold";
+    }
+    console.log(element.style.backgroundColor);
+};
+
+box_7.addEventListener("mousemove", box_789_on_mouse_move);
+box_8.addEventListener("mousemove", box_789_on_mouse_move);
+box_9.addEventListener("mousemove", box_789_on_mouse_move);
