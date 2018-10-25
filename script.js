@@ -1,35 +1,3 @@
-/*
-const box_1_on_click = (event) => {
-    console.log("Box clicked!");
-    console.log(event);//consolig the whole event parameter ! 
-    //console보면 뭔말인지 알거야: the type of the event is "MouseEvent"
-    //  console.log(event.target);
-    //  event.target.innerText = "clikced";
-    //  console.log(element.style);
-   let element = event.target;
-   console.log(element.style.backgroundColor);
-   element.style.backgroundColor = "red";
-   console.log(element.style.backgroundColor);
-};
-//event listener: varName.addEventListener(event, functionToCall)
-box_1.addEventListener("click", box_1_on_click);
-*/
-
-/*
-const box_1_on_click = (event) => {
-    console.log("Box clicked!");
-    console.log(event);
-    let element = event.target;
-    let box_color = element.style.backgroundColor;
-    console.log(box_color);    
-    c
-};
-//event listener: varName.addEventListener(event, functionToCall)
-box_1.addEventListener("click", box_1_on_click);
-*/
-
-
-
 //Select the HTML element with the ID of box-1. Add an event listener when the user's mouse clicks on said HTML element, the box-1's background changes to red
 let box_1 = document.getElementById("box-1");
 
@@ -80,7 +48,6 @@ box_3.addEventListener("mouseup", box_3_on_mouse_up);
 let box_4 = document.getElementById("box-4");
 let box_5 = document.getElementById("box-5");
 let box_6 = document.getElementById("box-6");
-
 //they are originally transparent(no color)
 const box_456_on_mouse_over = (event) => {
     let element = event.target;
@@ -105,7 +72,6 @@ box_6.addEventListener("mouseleave", box_456_on_mouse_leave);
 let box_7 = document.getElementById("box-7");
 let box_8 = document.getElementById("box-8");
 let box_9 = document.getElementById("box-9");
-
 //they are originally transparent(no color)
 const box_789_on_mouse_move = (event) => {
     let element = event.target;   
@@ -114,7 +80,6 @@ const box_789_on_mouse_move = (event) => {
     } else {
         element.style.backgroundColor = "gold";
     }
-    console.log(element.style.backgroundColor);
 };
 
 box_7.addEventListener("mousemove", box_789_on_mouse_move);
