@@ -74,7 +74,7 @@ let box_8 = document.getElementById("box-8");
 let box_9 = document.getElementById("box-9");
 //they are originally transparent(no color)
 const box_789_on_mouse_move = (event) => {
-    let element = event.target;   
+    let element = event.target;
     if (element.style.backgroundColor === "" || element.style.backgroundColor === "gold") {
         element.style.backgroundColor = "fuchsia";
     } else {
